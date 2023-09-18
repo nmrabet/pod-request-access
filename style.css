@@ -1,0 +1,46 @@
+:root {
+  --clr-green: #54e6af;
+  --clr-darkgrey: #2c344b;
+  --clr-black: #121725;
+  --clr-bluegrey: #5a668a;
+  --clr-lightgrey: #c2cbe5;
+
+  --fs-small: 1.125rem;
+  --fs-large: 3.25rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  margin: 0;
+}
+
+.green {
+  color: var(--clr-green);
+}
+
+.btn-default {
+  font-weight: bold;
+  padding: 1em 3em;
+  background-color: var(--clr-green);
+  color: var(--clr-black);
+  border-radius: 50px;
+  border: none;
+}
+
+.form-default {
+  background-color: var(--clr-darkgrey);
+  color: var(--clr-lightgrey);
+  padding: 1em 3em;
+  border-radius: 50px;
+  border: none;
+}
+
+.form-default:active {
+  color: #fff;
+}
