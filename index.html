@@ -19,29 +19,54 @@
     <title>Frontend Mentor | Pod request access landing page</title>
   </head>
   <body>
-    <img src="./assets/desktop/logo.svg" alt="" class="logo"/>
-    <div class="container">
-      <h1 class="title">
-        <span class="green">Publish your podcasts</span> everywhere.
-      </h1>
-      <p class="main-text">
-        Upload your audio to Pod with a single click. We’ll then distribute your
-        podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
-        more!
-      </p>
-      <div class="form-pod-container">
-        <form action="send" class="form-container">
-          <input type="email" name="email" id="email" value="Email address" class="input-default"/>
-          <button class="btn-default">Request access</button>
-        </form>
-        <div class="podcasts">
-          <img src="./assets/desktop/spotify.svg" alt="" class="podcast-img"/>
-          <img src="./assets/desktop/apple-podcast.svg" alt="" class="podcast-img"/>
-          <img src="./assets/desktop/google-podcasts.svg" alt="" class="podcast-img"/>
-          <img src="./assets/desktop/pocket-casts.svg" alt="" class="podcast-img"/>
+    <main>
+      <img src="./assets/desktop/logo.svg" alt="" class="logo" />
+      <div class="container">
+        <h1 class="title">
+          <span class="green">Publish your podcasts</span> everywhere.
+        </h1>
+        <p class="main-text">
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+        <div class="form-pod-container">
+          <form class="form-container">
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="Email address"
+              class="input-default"
+            />
+            <button class="btn-default" id="btn-request">Request access</button>
+          </form>
+          <p id="email-alert"></p>
+          <div class="podcasts">
+            <img
+              src="./assets/desktop/spotify.svg"
+              alt=""
+              class="podcast-img"
+            />
+            <img
+              src="./assets/desktop/apple-podcast.svg"
+              alt=""
+              class="podcast-img"
+            />
+            <img
+              src="./assets/desktop/google-podcasts.svg"
+              alt=""
+              class="podcast-img"
+            />
+            <img
+              src="./assets/desktop/pocket-casts.svg"
+              alt=""
+              class="podcast-img"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </main>
     <script src="./index.js"></script>
   </body>
 </html>

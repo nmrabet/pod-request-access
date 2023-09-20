@@ -20,11 +20,17 @@ body {
   font-family: "Chivo", sans-serif;
   background-color: var(--clr-black);
   background-image: url(./assets/mobile/image-host.jpg);
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
   color: #fff;
   overflow-x: hidden;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -34,11 +40,11 @@ body {
 
 .container {
   text-align: center;
-  margin: 3em 0 1em 1em;
+  margin: 2em 0 1em 1em;
 }
 
 .container > * {
-  margin: 1em 0;
+  margin: 0.5em 0;
 }
 
 .title {
@@ -76,29 +82,41 @@ body {
 .btn-default {
   background-color: var(--clr-green);
   color: var(--clr-black);
+  cursor: pointer;
+}
+
+.btn-default:hover {
+  background-color: #b3ffe2;
 }
 
 .input-default {
   display: block;
   background-color: var(--clr-darkgrey);
   color: var(--clr-lightgrey);
+  outline: none;
 }
 
 .input-default:active {
   color: #fff;
 }
 
+#email-alert {
+  color: red;
+  font-weight: bolder;
+  margin-left: 1em;
+  order: 3;
+}
+
 .podcasts {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
   margin: 2.5em auto;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .podcast-img {
-  width: 100%;
-  height: 25px;
+  max-width: 100%;
 }
 
 .form-container {
@@ -121,7 +139,7 @@ body {
 
   body::after {
     content: url(./assets/desktop/bg-pattern-dots.svg);
-    position: relative;
+    position: absolute;
     left: 30px;
     bottom: 0;
   }
@@ -140,7 +158,6 @@ body {
 
   .title {
     font-size: var(--fs-large);
-    margin-top: 1em;
     margin-bottom: 0;
   }
 
@@ -150,18 +167,55 @@ body {
 
   .form-pod-container,
   .podcasts {
-    margin: 2em 0;
-  }
-  .podcast-img {
-    width: 100%;
-    height: 35px;
+    margin: 3.5em 0;
   }
 
   .main-text {
-    margin: 1em 0; 
+    margin: 1em 0;
     max-width: 450px;
     font-size: 1.125rem;
   }
+
+  .form-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .input-default {
+    margin-left: 0;
+    padding-right: 2em;
+    max-width: 400px;
+  }
+
+  .btn-default {
+    max-width: 200px;
+    margin-left: -25em;
+  }
+
+  #email-alert {
+    color: red;
+    font-weight: bolder;
+    margin-left: 1em;
+    order: 0;
+  }
 }
+
 @media screen and (min-width: 1024px) {
+  body::before {
+    margin-top: 4em;
+    position: absolute;
+    content: url(./assets/desktop/image-host.jpg);
+  }
+
+  .container {
+    background-color: var(--clr-black);
+    text-align: left;
+    padding: 2em 2em;
+    max-width: 65%;
+  }
+
+  body::after {
+    left: 90%;
+    bottom: 90px;
+  }
 }
